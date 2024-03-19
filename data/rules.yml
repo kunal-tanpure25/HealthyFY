@@ -1,0 +1,13 @@
+version: "3.1"
+
+rules:
+  - rule: Handle Disease Description
+    steps:
+      - intent: inform_disease
+      - action: action_disease_description
+
+  - rule: Handle Find Nearest Hospital
+    steps:
+      - intent: find_hospital
+      - action: action_nearest_hospital
+

@@ -1,0 +1,6 @@
+source ./venv/bin/activate   -->  activate virtual terminal
+
+rasa run action
+rasa run
+rasa shellhi
+

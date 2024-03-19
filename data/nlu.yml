@@ -1,0 +1,79 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: inform_disease
+  examples: |
+    - Tell me about [diabetes](disease)
+    - What is [malaria](disease)?
+    - Can you describe [cancer](disease) for me?
+    - Explain [COVID-19](disease) to me please
+
+- intent: find_hospital
+  examples: |
+    - Find hospitals near me
+    - Nearest hospitals
+    - Show me where the nearest hospital is
+    - Hospitals nearby
+
+- intent: location
+  examples: |
+    - My location is [37.7749, -122.4194](location)
+    - Latitude: [41.8781](latitude), Longitude: [-87.6298](longitude)
+    - I am at [51.5074, -0.1278](location)
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+

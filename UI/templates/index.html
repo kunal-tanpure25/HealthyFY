@@ -1,0 +1,62 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa Chatbot</title>
+    <style>
+        /* Your CSS styles for the chat UI here */
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button id="send-btn">Send</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const chatBox = document.getElementById("chat-box");
+            const userInput = document.getElementById("user-input");
+            const sendBtn = document.getElementById("send-btn");
+
+            sendBtn.addEventListener("click", function() {
+                sendMessage();
+            });
+
+            function sendMessage() {
+                const userMessage = userInput.value.trim();
+                if (userMessage !== "") {
+                    appendMessage("user", userMessage);
+                    userInput.value = "";
+
+                    // Send user message to Flask endpoint
+                    fetch("/get_response", {
+                        method: "POST",
+                        body: new URLSearchParams({user_message: userMessage}),
+                        headers: {
+                            "Content-Type": "application/x-www-form-urlencoded"
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        const botResponse = data.bot_response;
+                        appendMessage("bot", botResponse);
+                    })
+                    .catch(error => console.error("Error:", error));
+                }
+            }
+
+            function appendMessage(sender, message) {
+                const messageElement = document.createElement("div");
+                messageElement.classList.add(sender);
+                messageElement.textContent = message;
+                chatBox.appendChild(messageElement);
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        });
+    </script>
+</body>
+</html>

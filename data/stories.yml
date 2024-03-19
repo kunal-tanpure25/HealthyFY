@@ -1,0 +1,25 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+## Disease Description
+- story: Disease Description
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_disease
+  - action: action_disease_description
+
+## Nearest Hospital
+- story: Find Nearest Hospital
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_hospital
+  - action: action_nearest_hospital
+

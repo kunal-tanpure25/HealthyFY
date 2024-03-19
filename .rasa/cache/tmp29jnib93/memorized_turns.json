@@ -1,0 +1,11 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJydjkEKgDAMBL/SB/iCfkUkFF0loKmkqZfSv1uo94K3HRiGnUudXLkVD4XVOIp3pQ+ScMG7D05OBmluTtDmsDQ07w4FrA4a2QxKXf1XGLxg2aNetHFCSKh1eQGCB1Ic": "action_disease_description",
+    "eJydjkEKgDAMBL/SB/iCfkUkFF0loFGS6KX4dyt6r3jbXYZh23w2IW+Kg1LvvEoM+QkkaUEMb5nZHFLY3aCFYSnVY5gU8LPi2N2h9KD/DJUXLOOqCw1sSIaPspemAdYrb/dWN3cXfad08w==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVaZl5KfEZ+cUFmSWJObW1sQAvtVG4": "action_nearest_hospital",
+    "eJydjlEKgCAQRK/iATqBV4kQqakWao1160e8e4JBn0Z/M/DmMX3KnUmH4HJ+VApsTarBsd9hzVM2igou7BkhhSEuVa1ZBNDccJyqEFfRf4bGi5l4cmuIB6nfProYXhD1nbWsww04nXL/": "action_listen"
+  }
+}

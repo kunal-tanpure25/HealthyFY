@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-disease",
+      "2": "I-disease",
+      "3": "L-disease",
+      "4": "U-disease",
+      "5": "B-latitude",
+      "6": "I-latitude",
+      "7": "L-latitude",
+      "8": "U-latitude",
+      "9": "B-location",
+      "10": "I-location",
+      "11": "L-location",
+      "12": "U-location",
+      "13": "B-longitude",
+      "14": "I-longitude",
+      "15": "L-longitude",
+      "16": "U-longitude",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-disease": 1,
+      "I-disease": 2,
+      "L-disease": 3,
+      "U-disease": 4,
+      "B-latitude": 5,
+      "I-latitude": 6,
+      "L-latitude": 7,
+      "U-latitude": 8,
+      "B-location": 9,
+      "I-location": 10,
+      "L-location": 11,
+      "U-location": 12,
+      "B-longitude": 13,
+      "I-longitude": 14,
+      "L-longitude": 15,
+      "U-longitude": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]
